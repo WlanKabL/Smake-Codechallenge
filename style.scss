@@ -1,0 +1,186 @@
+//* AppHeader.vue
+.header {
+    background-color: rgb(36, 36, 36);
+
+    .header-left {
+        min-width: 120px;
+    }
+
+    .header-routes {
+        .active {
+            color: #42b983;
+        }
+    }
+}
+
+//* AppFooter.vue
+footer {
+    background-color: rgb(36, 36, 36);
+    border-top: 0.5px solid darkgray;
+}
+
+//* checkout.vue
+.checkout-view {
+    width: 95vw;
+}
+
+.checkout-details-container {
+    .data-card {
+        background: #242424;
+        .line {
+            border: 1px solid grey;
+        }
+    }
+}
+
+//* Switcher.vue
+/* Default show */
+.show-mobile {
+    display: block;
+}
+
+/* Default hide */
+.hide-mobile {
+    display: none;
+}
+
+.switcher {
+    max-height: 30rem;
+    background-color: rgb(36, 36, 36);
+
+    .switcher-option-list {
+        max-height: 30rem;
+        max-width: 70vw;
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .switcher-option {
+        border: 1px solid transparent;
+
+        &.active {
+            border-color: purple;
+        }
+    }
+
+    .color-option {
+        border: 1px solid rgb(77, 76, 76);
+    }
+}
+
+//* Shirt.vue
+.shirt-container {
+    width: 100vw;
+    .motive {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: 30%;
+    }
+
+    svg {
+        width: 100%;
+
+        .st0 {
+            fill: #787878;
+        }
+
+        .st1 {
+            fill: #242424;
+        }
+
+        .st2 {
+            fill: #4c4c4c;
+        }
+
+        .st3 {
+            fill: none;
+            stroke: #000000;
+            stroke-width: 2;
+            stroke-linejoin: round;
+            stroke-miterlimit: 10;
+        }
+
+        .st4 {
+            fill: none;
+            stroke: #000000;
+            stroke-linejoin: round;
+            stroke-miterlimit: 10;
+            stroke-dasharray: 3;
+        }
+    }
+}
+
+//* Button Styling
+.btn {
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border: 0 none;
+    padding: 0.571rem 0.75rem;
+    font-size: 1rem;
+    min-width: 4rem;
+    justify-content: center;
+
+    background: rgb(0, 110, 255);
+    border-radius: 4px;
+
+    &.primary {
+        background: #ce93d8;
+        color: #121212;
+    }
+
+    &.secondary {
+        background-color: #a5d6a7;
+        color: #121212;
+    }
+
+    &.info {
+        background: #90caf9;
+        color: #212121;
+    }
+
+    &.success {
+        background: #c5e1a5;
+        color: #212121;
+    }
+
+    &.warning {
+        background: #fff59d;
+        color: #212121;
+    }
+
+    &.danger {
+        background: #ef9a9a;
+        color: #212121;
+    }
+
+    &.help {
+        background: #ce93d8;
+        color: #212121;
+    }
+}
+
+@media (min-width: 768px) {
+    .shirt-container {
+        max-width: 34rem;
+    }
+
+    .hide-mobile {
+        display: block; /* Show on bigger screens */
+    }
+
+    .show-mobile {
+        display: none; /* Hide on bigger screens */
+    }
+}
